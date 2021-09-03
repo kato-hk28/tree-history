@@ -9,19 +9,26 @@
                 height: 800px;
             }
         </style>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet">
+        <style type="text/css">
+            #network {
+                width: 1000px;
+                height: 800px;
+                border: 1px solid #000;
+            }
+        </style>
     </head>
 <body>
-    <!-- <p id="tabnum"></p>
-    <table border="1">
-        <thead></thead>
-        <tbody id="tabs"></tbody>
-    </table> -->
     <table border="1">
         <thead></thead>
         <tbody id="histories"></tbody>
     </table>
 
+    <div id="network"></div>
+
+
     <script src="jquery-3.6.0.min.js"></script>
+    <script src="vis.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
