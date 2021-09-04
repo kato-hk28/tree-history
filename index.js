@@ -9,7 +9,7 @@ var from = Number(localStorage.getItem('time'));
 var nodes = new vis.DataSet();
 chrome.history.search({text: '', startTime: from, maxResults: 1000}, function(data) {
     for (var i in data) {
-        var node = { id: i, label: data[i].title, url: data[i].url };
+        var node = { id: data[i].url, label: data[i].title, url: data[i].url };
         console.log(node);
         nodes.add(node);
     }
