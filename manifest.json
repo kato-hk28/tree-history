@@ -12,5 +12,22 @@
         },
         "default_title": "テスト",
         "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches":[
+                "<all_urls>"
+            ],
+            "js":[
+                "jquery-3.6.0.min.js",
+                "content.js"
+            ]
+        }
+    ],
+    "background":{
+        "scripts":[
+            "background.js"
+        ],
+        "persistent": true
     }
 }
